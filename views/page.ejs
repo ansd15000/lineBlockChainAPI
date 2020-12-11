@@ -1,0 +1,63 @@
+<html>
+    <header>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    </header>
+    <body>
+        <b>Services</b>
+        <hr>
+        service: <button onclick="call(`services`)">해당 api키로 서비스 확인</button>
+        <hr>
+        <b>service-tokens</b>
+        <br>
+        check tokens at this service: <button onclick="call(`serviceTokens`)">service-token</button> <br>
+        check token using Contract_ID: <button onclick="call(`tokenInformation`)">tokenInformation</button> <br>
+        토큰 이름 <input id = "tokenName"> 메타데이터 <input id = "metaData"><br>
+        <button onclick="updateTokenInformation()">updateTokenInformation</button> <br>
+        <!-- 유저ID <input id = "toUserId">  -->
+        보낼 월렛주소 <input id = "toAddress" value="tlink1nue33ra7xxu396x5msvqv4456el4hr954gruhv"> 
+        가격 <input id="amount"><br>
+        <button onclick="tokenMint()">tokenMint</button> &nbsp;
+        <button onclick="tokenBurn()">tokenBurn</button> <br>
+
+        표기할 데이터 갯수 <input id = "limit"> 
+        페이징 <input id = "page"> 
+        정렬형태 <input id = "orderBy"> <br>
+        <button onclick="tokenHolders()">tokenHolders</button> <br>
+
+        <hr>
+        <b>Wallet</b>
+        <br>
+        서비스에 있는 모든 지갑정보 <button onclick="call(`wallet`)">조회</button> <br>
+        월렛항목의 addrss는 전부 이거로: <input id="getWallet"><br>
+        월렛항목의 contractId 전부 이거로: <input id="getContractId"><br>
+        <input id = "chkWalletInfo"> <button onclick="walletInformation()">해당 지갑정보 조회</button> <br>
+        <button onclick="walletTransactions()">해당 월렛에서 발생한 트랜잭션들</button> <br>
+        <button onclick="getCoinBalance()">코인얼마나 있음</button> <br>
+
+        <input id="fromWallet" placeholder="보낼사람"> <br>
+        <input id="fromSecret" placeholder="보낼사람 비밀키"> <br>
+        <input id="toWallet" placeholder="받을사람"> <br>
+        <input id="coinAmount" placeholder="코인금액">
+        <button onclick="walletTransfer()">코인 전송</button> <br>
+        <input id="tokenAmount" placeholder="토큰금액금액">
+        <button onclick="walletTokenTransfer()">토큰 전송</button> <br>
+        <button onclick="getTokenBalance()">해당지갑 서비스토큰개수 반환</button>
+        <button onclick="getTokenBalanceInContract()">해당 컨트랙의 토큰반환</button> <br>
+        
+        <hr>
+        <b>transactions</b> <br>
+        <input id = txHash placeholder="transactionHash">
+        <button onclick="getTransactions()">트랜잭션조회</button> <br>
+        <button onclick="getMemoInTx()">트랜잭션의 메모조회</button> <br>
+
+        <hr>
+        <b>메모?</b> <br>
+        <input id = "memoWallet" placeholder="메모하려는 지갑주소"> <input id = "memoSecret" placeholder="비밀키"> <br>
+        <input id = "memo" placeholder="아무값 입력"> <br>
+        <button onclick="saveText()">블록체인에 메모입력</button>
+
+        <!-- walletAddress: <button onclick="call(`walletAddress`)">어드민 월렛에 해당하는 지갑주소들 반환</button> <br> -->
+    </body>
+
+    <script src="/js/page.js"></script>
+</html>
