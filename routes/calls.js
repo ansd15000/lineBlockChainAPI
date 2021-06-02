@@ -12,13 +12,13 @@
     const p = `POST`, g = `GET`, put = `PUT`;
 
     const _contractId = `67e6d1e1`;
-    const serviceId   = `3fff9a30-a666-4d83-9228-f1c7a725b7b8`;
-    const apiKey      = `c2c7f595-ff32-43a8-bf13-0802a84d02bd`;
-    const apiSecret   = `27fc4524-c836-472e-9317-ebfb0a49840d`;
-    const adminWallet = `tlink12d73dqfvcsawu5sfqemqslh0u0p4v2y4cd0ca0`;
-    const adminSecret = `HNDewI4HR7NwogTYqNMHC6bEfgENbxusBIGRC9fJEh4=`;
-    const host        = `tlink1nue33ra7xxu396x5msvqv4456el4hr954gruhv`;
-    const hostPv      = `dAZs1fZ+5gk9mCJfCiKeH2yDqK4SnyaYUK7bVXfdINg=`;
+    const serviceId   = ``;
+    const apiKey      = ``;
+    const apiSecret   = ``;
+    const adminWallet = ``;
+    const adminSecret = ``;
+    const host        = ``;
+    const hostPv      = ``;
     const baseUrl = `https://test-api.blockchain.line.me`;
     
 
