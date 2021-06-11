@@ -40,7 +40,7 @@
     const makeQuery = (data, parameter) => {
         data = data + "?";
         const keys = Object.keys(parameter);
-        keys.sort(); // 오름차순 정렬.. 아니 원하는거 개많네 진짜
+        keys.sort(); // 오름차순 정렬.. 아니 원하는거 많네 진짜
         for (let key of keys) data = data + key + "=" + parameter[key] + "&";
         data = data.slice(0, -1); // 마지막 & 제거
         c(data)
